@@ -1,4 +1,3 @@
-
 const main = document.querySelector(".item_list");
 
 main.querySelectorAll(".item_list .item").forEach((e) => {
@@ -32,7 +31,7 @@ function edit(e) {
   function checkClass() {
     if (productName.classList.contains("item__name")) {
       da.style.display = "block";
-      da.getElementsByClassName("newName").[0].value = productName.innerHTML;
+      da.getElementsByClassName("newName")[0].value = productName.innerHTML;
     }
   }
   checkClass();
@@ -40,6 +39,6 @@ function edit(e) {
   let net = document.getElementById("knopka");
   net.onclick = function () {
     da.style.display = "none";
-    productName.innerHTML = da.getElementsByClassName("newName").[0].value
+    productName.innerHTML = da.getElementsByClassName("newName")[0].value;
   };
 }
