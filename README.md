@@ -1,2 +1,16 @@
-# products-panel
-Created with CodeSandbox
+# Панель товаров / Products panel
+
+Выполнено в качестве тренировки JS :)
+
+![https://potatbut.github.io/products-panel/](https://static1.squarespace.com/static/5876dd361b631bfb241cf78c/t/5c96c0e38165f590a8dac66b/1553383654580/Moving+Company+Toronto+Welcome+GIF "Demo :)")
+
+### - [Демо проекта](https://potatbut.github.io/products-panel/ "DEMO")
+
+---
+
+**Были поставлены следующие задачи**:
+
+- Панель товаров. Каждый блок включает в себя название, некоторое описание и кнопку "купить",
+- Невидимый блок сверху, выпадающее меню по наведению на него.
+- Возможность изменения названия товара.
+- Возможность перетаскивать товары мышкой, менять местами.
