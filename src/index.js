@@ -1,4 +1,4 @@
-import "./styles.css";
+/* import "./styles.css"; */
 const main = document.querySelector(".item_list");
 
 main.querySelectorAll(".item_list .item").forEach((e) => {
