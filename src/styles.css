@@ -1,0 +1,130 @@
+.row {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  height: 20px;
+  width: 900px;
+  border: 1px solid;
+  border-bottom: none;
+  background-color: #fff1eb;
+}
+
+.item_list {
+  width: 900px;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fffbeb;
+  border: 1px solid;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  text-align: center;
+  margin: auto;
+  background-color: #fff1eb;
+  display: grid;
+  grid-template-rows: 1fr 2fr 30px;
+}
+
+.item__name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.item__description {
+  pointer-events: none;
+  min-width: 100px;
+}
+
+.submenu {
+  display: none;
+}
+
+.menu:hover .submenu {
+  display: block;
+  position: absolute;
+}
+
+.submenu__name {
+  background-color: #fff;
+}
+
+ul {
+  margin: 0;
+}
+
+.submenu a {
+  display: block;
+  border-bottom: 2px solid #fff;
+  background: #fff;
+  text-decoration: none;
+  border: 1px solid #000;
+}
+.submenu a:hover {
+  background: #789767;
+}
+
+.submenu ul li,
+.submenu ul li ul li {
+  width: 120px;
+}
+
+.submenu ul,
+.submenu:hover ul li ul {
+  display: none;
+  list-style-type: none;
+  width: 120px;
+}
+
+.submenu:hover ul,
+.submenu:hover ul li:hover ul {
+  display: block;
+}
+
+.submenu:hover ul li:hover ul,
+.submenu:hover ul li:hover ul li:hover ul {
+  position: absolute;
+  left: 120px;
+  top: 10;
+}
+
+.submenu ul li ul,
+.submenu ul li ul li ul {
+  clear: left;
+  margin-top: -10px;
+}
+
+.submenu-name {
+  background-color: #fff;
+  padding: 3px;
+  text-align: center;
+}
+
+.red {
+  position: absolute;
+}
+
+.item__name:hover .action {
+  display: block;
+  margin-top: -20px;
+}
+input {
+  background-color: #fff1eb;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border: none;
+}
+
+input:focus {
+  outline-width: 0;
+}
