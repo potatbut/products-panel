@@ -1,5 +1,5 @@
 .row {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,16 +7,15 @@
 }
 
 .menu {
+  max-width: 900px;
   height: 20px;
-  width: 900px;
   border: 1px solid;
   border-bottom: none;
   background-color: #fff1eb;
 }
 
 .item_list {
-  width: 900px;
-  height: 700px;
+  max-width: 900px;
   display: flex;
   flex-wrap: wrap;
   background-color: #fffbeb;
@@ -24,11 +23,11 @@
 }
 
 .item {
+  margin: 10px auto;
   width: 200px;
   height: 200px;
   border: 1px solid;
   text-align: center;
-  margin: auto;
   background-color: #fff1eb;
   display: grid;
   grid-template-rows: 1fr 2fr 30px;
@@ -39,18 +38,13 @@
   margin: 0;
 }
 
-.item__description {
-  pointer-events: none;
-  min-width: 100px;
-}
-
 .submenu {
   display: none;
 }
 
 .menu:hover .submenu {
   display: block;
-  position: absolute;
+  position: fixed;
 }
 
 .submenu__name {
@@ -59,6 +53,7 @@
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 .submenu a {
@@ -68,20 +63,13 @@ ul {
   text-decoration: none;
   border: 1px solid #000;
 }
-.submenu a:hover {
-  background: #789767;
-}
-
-.submenu ul li,
-.submenu ul li ul li {
-  width: 120px;
-}
 
 .submenu ul,
 .submenu:hover ul li ul {
   display: none;
   list-style-type: none;
-  width: 120px;
+  width: 75px;
+  height: 30px;
 }
 
 .submenu:hover ul,
@@ -92,13 +80,7 @@ ul {
 .submenu:hover ul li:hover ul,
 .submenu:hover ul li:hover ul li:hover ul {
   position: absolute;
-  left: 120px;
-  top: 10;
-}
-
-.submenu ul li ul,
-.submenu ul li ul li ul {
-  clear: left;
+  left: 75px;
   margin-top: -10px;
 }
 
@@ -109,22 +91,15 @@ ul {
 }
 
 .red {
-  position: absolute;
+  border: 1px solid #000;
+  width: 200px;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.item__name:hover .action {
-  display: block;
-  margin-top: -20px;
-}
-input {
-  background-color: #fff1eb;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  border: none;
-}
-
-input:focus {
-  outline-width: 0;
+.red input {
+  border: 1px solid #000;
+  background-color: #fff;
 }

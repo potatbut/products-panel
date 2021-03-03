@@ -4,170 +4,176 @@
     <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <body>
     <main class="row">
-      <div class="menu">
-        <div class="submenu">
-          <span class="submenu__name">Каталог оборудования</span>
-          <ul class="level-1">
-            <li>
-              <a href="#">Уровень 1</a>
-              <ul class="level-2">
-                <li>
-                  <a href="#">Уровень 2</a>
-                  <ul class="level-3">
-                    <li>
-                      <a href="#">Уровень 3</a>
-                      <ul class="level-4">
-                        <li><a href="#">Уровень 4</a></li>
-                        <li><a href="#">Уровень 4</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li><a href="#">Уровень 1</a></li>
-            <li><a href="#">Уровень 1</a></li>
-            <li>
-              <a href="#">Уровень 1</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div id="red" class="red" style="display: none;">
+          <span>Новое имя</span>
+          <input
+            class="newName"
+            type="text"
+            value="новое название"
+            id="newName"
+          />
+          <button class="action" id="knopka">Готово</button>
         </div>
-      </div>
-      <div class="item_list">
-        <div id="c1" class="item" draggable="true">
-          <div class="item__name">Вакуумная напылительная станция</div>
 
-          <span class="item__description">
-            Описание станции
-          </span>
-          <button>
-            Купить22
-          </button>
+        <div class="menu">
+          <div class="submenu">
+            <span class="submenu__name">Каталог оборудования</span>
+            <ul class="level-1">
+              <li>
+                <a href="#">Уровень 1</a>
+                <ul class="level-2">
+                  <li>
+                    <a href="#">Уровень 2</a>
+                    <ul class="level-3">
+                      <li>
+                        <a href="#">Уровень 3</a>
+                        <ul class="level-4">
+                          <li><a href="#">Уровень 4</a></li>
+                          <li><a href="#">Уровень 4</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Уровень 1</a></li>
+              <li><a href="#">Уровень 1</a></li>
+              <li>
+                <a href="#">Уровень 1</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div id="c2" class="item" draggable="true">
-          <div class="item__name">Система обезгаживания плёнки</div>
 
-          <span class="item__description">
-            Описание системы
-          </span>
-          <button>
-            Купить
-          </button>
-        </div>
-        <div id="c3" class="item" draggable="true">
-          <div class="item__name">Криодержатель томографический</div>
+        <div class="item_list">
+          <div id="c1" class="item" draggable="true">
+            <div class="item__name">Вакуумная напылительная станция</div>
 
-          <span class="item__description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c4" class="item" draggable="true">
-          <div class="item__name">Вытяжной шкаф</div>
+            <span class="item__description">
+              Описание станции
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c2" class="item" draggable="true">
+            <div class="item__name">Система обезгаживания плёнки</div>
 
-          <span class="item__description">
-            Какая-то коробка24
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c5" class="item" draggable="true">
-          <div class="item__name">КОробка5</div>
+            <span class="item__description">
+              Описание системы
+            </span>
+            <button>
+              Купить
+            </button>
+          </div>
+          <div id="c3" class="item" draggable="true">
+            <div class="item__name">Криодержатель томографический</div>
 
-          <span class="item__description">
-            Какая-то коробка5
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c6" class="item" draggable="true">
-          <div class="item__name">КОробка6</div>
+            <span class="item__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c4" class="item" draggable="true">
+            <div class="item__name">Вытяжной шкаф</div>
 
-          <span class="item__description">
-            Какая-то коробка6
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c7" class="item" draggable="true">
-          <div class="item__name">КОробка7</div>
+            <span class="item__description">
+              Какая-то коробка24
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c5" class="item" draggable="true">
+            <div class="item__name">КОробка5</div>
 
-          <span class="item__description">
-            Какая-то коробка7
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c8" class="item" draggable="true">
-          <div class="item__name">КОробка8</div>
+            <span class="item__description">
+              Какая-то коробка5
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c6" class="item" draggable="true">
+            <div class="item__name">КОробка6</div>
 
-          <span class="item__description">
-            Какая-то коробка8
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c9" class="item" draggable="true">
-          <div class="item__name">КОробка9</div>
+            <span class="item__description">
+              Какая-то коробка6
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c7" class="item" draggable="true">
+            <div class="item__name">КОробка7</div>
 
-          <span class="item__description">
-            Какая-то коробка9
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c10" class="item" draggable="true">
-          <div class="item__name">КОробка10</div>
+            <span class="item__description">
+              Какая-то коробка7
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c8" class="item" draggable="true">
+            <div class="item__name">КОробка8</div>
 
-          <span class="item__description">
-            Какая-то коробка10
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c11" class="item" draggable="true">
-          <div class="item__name">КОробка11</div>
+            <span class="item__description">
+              Какая-то коробка8
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c9" class="item" draggable="true">
+            <div class="item__name">КОробка9</div>
 
-          <span class="item__description">
-            Какая-то коробка11
-          </span>
-          <button>
-            Купить22
-          </button>
-        </div>
-        <div id="c12" class="item" draggable="true">
-          <div class="item__name">КОробка12</div>
+            <span class="item__description">
+              Какая-то коробка9
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c10" class="item" draggable="true">
+            <div class="item__name">КОробка10</div>
 
-          <span class="item__description">
-            Какая-то коробка12
-          </span>
-          <button>
-            Купить22
-          </button>
+            <span class="item__description">
+              Какая-то коробка10
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c11" class="item" draggable="true">
+            <div class="item__name">КОробка11</div>
+
+            <span class="item__description">
+              Какая-то коробка11
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
+          <div id="c12" class="item" draggable="true">
+            <div class="item__name">КОробка12</div>
+
+            <span class="item__description">
+              Какая-то коробка12
+            </span>
+            <button>
+              Купить22
+            </button>
+          </div>
         </div>
-      </div>
-      <div id="red" style="display: none;">
-        <input
-          class="newName"
-          type="text"
-          value="новое название"
-          id="newName"
-        />
-        <button class="action" id="knopka">Готово</button>
       </div>
     </main>
     <script type="text/javascript" src="src/index.js"></script>
